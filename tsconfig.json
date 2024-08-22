@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "ES2019",
+        "module": "CommonJS",
+        "lib": ["ESNext", "DOM"],
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "removeComments": true, //nao quero comentarios quando o codigo for copilado
+        "noEmitOnError": true, //nao quero emitir erros quando o codigo for copilado
+        "strict": true, //modo mais restrito do typescript
+        "esModuleInterop": true, //habilita a iteroperabilidade entre commonJs e o ES6Module
+        "skipLibCheck": true, //vai pular a checagem de arquivos com declarationFiles, arquivos com extensao .d .ts, que geralmente ja estao checados
+        "forceConsistentCasingInFileNames": true //nao permitir referencias inconcistentes para nomes de arquivos
+    },
+    "include": [ //include para checar somente a pasta src sempre
+        "./src" 
+    ]
+}
